@@ -331,7 +331,7 @@ abstract class GpsPicker extends BaseControl
 	private function getExportedRules()
 	{
 		if (!isset($this->exportedRules)) {
-			$this->exportedRules = Helpers::exportRules($this->rules);
+			$this->exportedRules = self::exportRules($this->rules);
 		}
 
 		return $this->exportedRules !== NULL ? $this->exportedRules : [];
